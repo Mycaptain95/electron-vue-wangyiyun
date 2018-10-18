@@ -1,0 +1,64 @@
+header .header-content {
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  background: #cd2f2f;
+}
+header .header-content .logo-tit {
+  display: inline-block;
+  width: 192px;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 50px;
+}
+header .header-content .toggle-box {
+  display: inline-block;
+  width: 290px;
+}
+header .header-content .toggle-box .toggle-history,
+header .header-content .toggle-box .input-box {
+  display: inline-block;
+}
+header .header-content .toggle-box .toggle-history {
+  margin-right: 5px;
+  vertical-align: top;
+  font-size: 0;
+}
+header .header-content .toggle-box .toggle-history i {
+  display: inline-block;
+  width: 29px;
+  height: 25px;
+  text-decoration: none;
+  vertical-align: top;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #ED9DFF;
+}
+header .header-content .toggle-box .toggle-history i:last-child {
+  border-left: none;
+}
+header .header-content .toggle-box .input-box {
+  position: relative;
+  width: 220px;
+  height: 25px;
+}
+header .header-content .toggle-box .input-box input {
+  display: block;
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #a82828;
+}
+header .header-content .toggle-box .input-box .search-btn {
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+}
+/*# sourceMappingURL=header.css.map */
