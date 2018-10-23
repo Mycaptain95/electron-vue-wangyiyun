@@ -34,31 +34,73 @@ header .header-content .toggle-box .toggle-history i {
   vertical-align: top;
   box-sizing: border-box;
   border-radius: 3px;
-  border: 1px solid #ED9DFF;
+  border: 1px solid rgba(125, 121, 121, 0.4);
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+}
+header .header-content .toggle-box .toggle-history i.go-back {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+header .header-content .toggle-box .toggle-history i.go-forward {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 header .header-content .toggle-box .toggle-history i:last-child {
   border-left: none;
 }
-header .header-content .toggle-box .input-box {
-  position: relative;
+header .header-content .toggle-box .searchInput {
   width: 220px;
   height: 25px;
+  border-radius: 5px;
 }
-header .header-content .toggle-box .input-box input {
-  display: block;
-  padding-left: 10px;
-  width: 100%;
+header .header-content .toggle-box .searchInput input {
   height: 100%;
   line-height: 25px;
-  outline: none;
+  background-color: rgba(125, 121, 121, 0.4);
   border: none;
-  box-sizing: border-box;
   border-radius: 12px;
-  background: #a82828;
+  font-size: 12px;
 }
-header .header-content .toggle-box .input-box .search-btn {
-  display: inline-block;
+header .header-content .user-box {
   position: absolute;
-  text-decoration: none;
+  display: inline-block;
+  right: 120px;
+  top: 13px;
+  width: 230px;
+  height: 25px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #000;
+}
+header .header-content .user-box .user-info {
+  height: 100%;
+  line-height: 25px;
+  color: #fff;
+  font-size: 13px;
+  text-align: left;
+}
+header .header-content .user-box .user-info i.user-head {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+header .header-content .user-box .user-util {
+  display: inline-flex;
+  height: 100%;
+  vertical-align: top;
+  width: 120px;
+  justify-content: space-around;
+}
+header .header-content .user-box .user-util i.user-util-item {
+  width: 20px;
+  height: 25px;
+  background: #fff;
+  justify-content: space-around;
 }
 /*# sourceMappingURL=header.css.map */

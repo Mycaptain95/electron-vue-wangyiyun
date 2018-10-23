@@ -53,11 +53,8 @@ module.exports = {
             /* 处理 css */
             {
                 test: /\.css$/,
-                loaders: [
-                    dev ? 'style-loader' : MiniCssExtractPlugin.loader,
-                    'css-loader'
-                ],
-                include: [path.resolve(__dirname, '../src')]
+                use: [ 'style-loader', 'css-loader' ],
+                // include: [path.resolve(__dirname, '../src')]
             },
             {
                 test: /.less$/,
@@ -69,6 +66,13 @@ module.exports = {
                     loader: "less-loader" // compiles Less to CSS
                 }]
             },
+            {
+                test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 10000
+                }
+            }
         ]
     },
     plugins: [
